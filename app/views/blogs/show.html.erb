@@ -64,7 +64,8 @@
       <!--編集という文字がリンクになっている。-->
       <!--edit_blog GET = /blogs/:id/editでこの時渡された@blogからは自動的にidが抽出される。-->
 
-       <a href="#">削除</a>
+      <%= link_to "削除", blog_path(@blog), method: :delete %>
+
       <div class="author-case">
         <div class="author-image"></div>
         <div class="author-box">
